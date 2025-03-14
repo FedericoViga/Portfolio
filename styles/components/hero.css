@@ -29,14 +29,14 @@
   display: none;
 }
 
-.hero__title-container-mobile {
+/* .hero__title-container-mobile {
   overflow: hidden;
-}
+} */
 
 .hero__title-mobile {
   color: var(--clr-slate400);
   text-transform: uppercase;
-  font-size: var(--size-5xl);
+  font-size: var(--size-4xl);
   letter-spacing: -0.05;
   line-height: 0.9;
   opacity: 0;
