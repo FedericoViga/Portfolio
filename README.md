@@ -11,10 +11,10 @@ La mia attuale pagina portfolio, fatta interamente con CSS e JavaScript, senza l
 - **Email obfuscation** (JavaScript)
   ...e un piccolo **minigioco** 😉
 
-Potete vederlo qui: [Portfolio]()
+Potete vederlo qui: [Portfolio](https://portfolio-federico-vigano.vercel.app/)
 
 <!-- Home link e img -->
-<a align="center" href="">
+<a align="center" href="https://portfolio-federico-vigano.vercel.app/">
 
 ![Screenshot](./public/pagina-portfolio.webp)
 
