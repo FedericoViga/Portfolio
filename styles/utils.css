@@ -1,0 +1,111 @@
+/* XS */
+/* @media (min-width: 475px) {}
+*/
+/* SM */
+/* @media (min-width: 640px) {}
+*/
+/* MD */
+/* @media (min-width: 768px) {}
+*/
+/* LG */
+/* @media (min-width: 1024px) {}
+*/
+/* XL */
+/* @media (min-width: 1280px) {}
+*/
+/* 2XL */
+/* @media (min-width: 1536px) {}
+*/
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.05em;
+  background-color: var(--clr-rose);
+  color: oklch(0.968 0.007 247.896);
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
+    0 6px 6px rgba(225, 29, 72, 0.5), 0 0 100px -10px var(--clr-rose);
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(225, 29, 72, 0.25),
+      0 10px 10px rgba(225, 29, 72, 0.22), 0 0 120px -10px var(--clr-rose);
+  }
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* gap tra le sezioni */
+.section-sm {
+  margin-top: 2rem;
+}
+
+.section {
+  margin-top: 4rem;
+}
+
+/* classe per lazy loading, per quando non sono ancora nel viewport */
+.loading {
+  filter: blur(20px) grayscale(100%);
+}
+/* classe per lazy loading, per quando entrano nel viewport */
+.loaded {
+  filter: blur(0) grayscale(0);
+  transition: 0.7s ease-in-out;
+}
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .section {
+    margin-top: 10rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
