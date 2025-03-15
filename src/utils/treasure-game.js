@@ -35,7 +35,7 @@ chestContainer.addEventListener("click", () => {
     chestSvg.style.display = "none";
     const newPara = document.createElement("p");
     newPara.classList.add("game-text");
-    newPara.textContent = "Peccato, questa volta niente TESORO...";
+    newPara.textContent = "Questa volta niente TESORO...";
     chestContainer.style.width = "auto";
     chestContainer.appendChild(newPara);
     newPara.style.display = "block";
