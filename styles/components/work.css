@@ -5,13 +5,17 @@
 .work__title {
   font-size: var(--size-2xl);
   color: var(--clr-light);
+
+  & span {
+    color: var(--clr-yellow-2);
+  }
 }
 
 .work__description {
   max-width: 60ch;
   font-size: var(--size-base);
   color: var(--clr-slate600);
-  /* margin serve auto su ase x altrimenti non lo centra */
+  /* margin serve auto su asse x altrimenti non lo centra */
   margin: 1rem auto;
 }
 

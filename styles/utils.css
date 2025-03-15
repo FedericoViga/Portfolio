@@ -22,6 +22,24 @@
   font-weight: 600;
   text-decoration: none;
   letter-spacing: -0.05em;
+  background-color: transparent;
+  color: var(--clr-yellow);
+  border: 2px solid var(--clr-yellow);
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  box-shadow: 0 1px 0px #aea508, 0 0px 0px #aea507, 0 0 8px 0px #aca408;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.btn-light {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.05em;
   background-color: var(--clr-rose);
   color: oklch(0.968 0.007 247.896);
   padding: 0.5em 1em;

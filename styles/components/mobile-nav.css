@@ -10,6 +10,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  & ul li:nth-child(4) a {
+    color: var(--clr-yellow-2);
+  }
 }
 
 .mobile-nav__menu {
@@ -34,10 +38,6 @@
   color: var(--clr-slate600);
   letter-spacing: -0.05;
   transition: color 0.3s;
-
-  &:hover {
-    color: var(--clr-rose);
-  }
 }
 
 .mobile-nav__link-line {

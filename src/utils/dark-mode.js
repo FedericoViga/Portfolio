@@ -3,6 +3,8 @@ const darkModeToggles = document.querySelectorAll(".dark-mode-toggle");
 const lightIcons = document.querySelectorAll(".bi-sun");
 const darkIcons = document.querySelectorAll(".bi-moon");
 const desktopNav = document.querySelector(".desktop-nav");
+const buttons = document.querySelectorAll(".data-btn");
+const statusBadge = document.querySelector(".hero__status");
 
 /* div di riferimemto per l'observer messo prima della navbar */
 const scrollWatcher = document.createElement("div");
@@ -22,6 +24,10 @@ const enableDarkMode = () => {
   localStorage.setItem("light-mode", "enabled");
   lightIcons.forEach((icon) => icon.classList.toggle("toggle-light"));
   darkIcons.forEach((icon) => icon.classList.toggle("toggle-dark"));
+  buttons.forEach((button) => button.classList.remove("btn"));
+  buttons.forEach((button) => button.classList.add("btn-light"));
+  statusBadge.classList.remove("hero__status");
+  statusBadge.classList.add("hero__status-light");
 };
 
 const disableDarkMode = () => {
@@ -29,6 +35,10 @@ const disableDarkMode = () => {
   localStorage.setItem("light-mode", "disabled");
   lightIcons.forEach((icon) => icon.classList.toggle("toggle-light"));
   darkIcons.forEach((icon) => icon.classList.toggle("toggle-dark"));
+  buttons.forEach((button) => button.classList.remove("btn-light"));
+  buttons.forEach((button) => button.classList.add("btn"));
+  statusBadge.classList.remove("hero__status-light");
+  statusBadge.classList.add("hero__status");
 };
 
 /* attiva lightmode ai caricamenti successivi in base al valore del localStorage */
@@ -41,7 +51,7 @@ const navObserver = new IntersectionObserver((entries) => {
   if (localStorage.getItem("light-mode") === "disabled") {
     if (!entries[0].isIntersecting) {
       desktopNav.classList.add("nav-dark");
-      desktopNav.classList.remove("nav-light");
+      /* desktopNav.classList.remove("nav-light"); */
     } else {
       desktopNav.classList.remove("nav-light");
       desktopNav.classList.remove("nav-dark");
@@ -50,7 +60,7 @@ const navObserver = new IntersectionObserver((entries) => {
   if (localStorage.getItem("light-mode") === "enabled") {
     if (!entries[0].isIntersecting) {
       desktopNav.classList.add("nav-light");
-      desktopNav.classList.remove("nav-dark");
+      /* desktopNav.classList.remove("nav-dark"); */
     } else {
       desktopNav.classList.remove("nav-dark");
       desktopNav.classList.remove("nav-light");
