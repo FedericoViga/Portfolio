@@ -52,14 +52,14 @@
   letter-spacing: 0.2em;
   -webkit-user-select: "none";
   user-select: none;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 #toTopBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 40px;
+  right: 14px;
   z-index: 9999;
   border: none;
   outline: none;
@@ -78,6 +78,11 @@
 
 /* MD */
 @media (min-width: 768px) {
+  #toTopBtn {
+    bottom: 20px;
+    right: 30px;
+  }
+
   #mrr img {
     width: 210px;
   }
