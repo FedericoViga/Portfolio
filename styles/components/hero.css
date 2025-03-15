@@ -63,8 +63,8 @@
   border-radius: 50rem;
   font-weight: 600;
   border: 2px solid var(--clr-light-green);
-  box-shadow: 0 1px 0px var(--clr-light-green), 0 0px 0px var(--clr-light-green),
-    0 0 5px 0px var(--clr-light-green);
+  box-shadow: 0 0px 0px var(--clr-light-green),
+    0 0 3px 0px var(--clr-light-green), inset 0 0 0.2rem var(--clr-light-green);
   opacity: 0;
   animation: slide2 0.7s 0.5s forwards;
 }
@@ -137,8 +137,9 @@
     border-radius: 50rem;
     font-weight: 600;
     border: 2px solid var(--clr-light-green);
-    box-shadow: 0 1px 0px var(--clr-light-green),
-      0 0px 0px var(--clr-light-green), 0 0 5px 0px var(--clr-light-green);
+    box-shadow: 0 0px 0px var(--clr-light-green),
+      0 0 5px 0px var(--clr-light-green),
+      inset 0 0 0.3rem var(--clr-light-green);
   }
 
   .hero__status-light {
