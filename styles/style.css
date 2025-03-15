@@ -69,14 +69,12 @@ img,
 picture,
 video,
 canvas,
-svg,
-::after {
+svg {
   display: block;
   max-width: 100%;
   -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
-  border-radius: 6px;
 }
 
 button {
