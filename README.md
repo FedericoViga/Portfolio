@@ -5,7 +5,7 @@ La mia attuale pagina portfolio, fatta interamente da zero con CSS e JavaScript,
 - **Mobile first** e **responsive** con sei media query basate sui container delle sezioni;
 - **Lazy loading** delle immagini (JavaScript)
 - **Lightbox** per visualizzare le immagini (JavaScript)
-- **Theme switcher** per scegliere tra dark e light mode (JavaScript)
+- **Theme switcher (dark/light mode)** con manipolazione DOM, gestione state e IntersectionObserver (JavaScript)
 - **Navbar animata** (JavaScript)
 - **Back to top button dinamico** (JavaScript)
 - **Email obfuscation** (JavaScript)<br>
